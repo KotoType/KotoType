@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>KotoType</title>
+  <desc>Windows 11 Fluent 风格蓝紫渐变圆角徽章，居中为悬浮麦克风与对称声波。</desc>
+  <defs>
+    <linearGradient id="bg" x1="32" y1="24" x2="480" y2="488" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="52%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="152" cy="116" r="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="micBody" x1="256" y1="112" x2="256" y2="296" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="256" y1="148" x2="256" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle background with glass highlight -->
+  <rect x="20" y="20" width="472" height="472" rx="116" ry="116" fill="url(#bg)"/>
+  <rect x="20" y="20" width="472" height="472" rx="116" ry="116" fill="url(#glow)"/>
+  <rect x="26" y="26" width="460" height="460" rx="110" ry="110" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="6"/>
+
+  <!-- Soft ambient ring behind emblem -->
+  <circle cx="256" cy="242" r="144" fill="#FFFFFF" fill-opacity="0.09"/>
+
+  <!-- Soft drop shadow for microphone & waves -->
+  <g transform="translate(0 10)" opacity="0.20">
+    <rect x="208" y="116" width="96" height="168" rx="48" ry="48" fill="#0F172A"/>
+    <path d="M168 238C168 286.601 207.399 326 256 326C304.601 326 344 286.601 344 238" stroke="#0F172A" stroke-width="24" stroke-linecap="round"/>
+    <path d="M256 326V374M208 374H304" stroke="#0F172A" stroke-width="24" stroke-linecap="round"/>
+  </g>
+
+  <!-- Symmetric sound wave bars -->
+  <g stroke="url(#wave)" stroke-width="22" stroke-linecap="round">
+    <path d="M108 204V268" stroke-opacity="0.72"/>
+    <path d="M148 166V306" stroke-opacity="0.92"/>
+    <path d="M364 166V306" stroke-opacity="0.92"/>
+    <path d="M404 204V268" stroke-opacity="0.72"/>
+  </g>
+
+  <!-- Central microphone capsule, cradle & stand -->
+  <rect x="208" y="114" width="96" height="168" rx="48" ry="48" fill="url(#micBody)"/>
+  <path d="M236 164H276M236 196H276" stroke="#2563EB" stroke-opacity="0.28" stroke-width="10" stroke-linecap="round"/>
+  <path d="M174 234C174 279.287 210.713 316 256 316C301.287 316 338 279.287 338 234" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+  <path d="M256 316V370M210 370H302" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+</svg>
